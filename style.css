@@ -43,6 +43,20 @@ header {
     font-weight: bold;
     color: var(--primary-color);
 }
+.site-logo {
+    height: 100px; /* Ajuste la taille selon tes goûts */
+    width: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Si tu veux que le logo soit bien aligné avec ton menu */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
 
 .btn-nav, .cta-button {
     background-color: var(--primary-color);
@@ -176,7 +190,31 @@ header {
 .reservation-section p {
     margin-bottom: 30px;
 }
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.social-icon {
+    font-size: 2rem; /* Taille des logos */
+    margin: 0 15px;
+    color: #ffffff; /* Couleur blanche par défaut */
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+/* Effet au survol (Instagram devient rose/orange, TikTok bleu/rouge) */
+.social-icon:hover {
+    transform: scale(1.2); /* Grossit un peu */
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.fa-tiktok:hover {
+    color: #00f2ea;
+}
 /* Pied de page */
 footer {
     text-align: center;
